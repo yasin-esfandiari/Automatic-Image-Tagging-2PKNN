@@ -3,7 +3,7 @@
 1. This repository includes the partial implementation of the 2PKNN algorithm.
 Yashaswi Verma and C.V. Jawahar, Image Annotation Using Metric Learning in Semantic Neighbourhoods, ECCV 12. [[Link](https://link.springer.com/chapter/10.1007/978-3-642-33712-3_60)]
 
-2. Also includes fine-tuning the ImageNet pre-trained neural nets(RN101, DN169, DN161, VGG16) on [mirFlickr](https://press.liacs.nl/mirflickr/) dataset for feature extraction in Keras. Pre/post-processing conducted with scikit-learn.
+2. Also includes using the ImageNet pre-trained neural nets(RN101, DN169, DN161, VGG16) on [mirFlickr](https://press.liacs.nl/mirflickr/) dataset for feature extraction in Keras. Pre/post-processing conducted with scikit-learn.
 
 ## Instructions:
 
@@ -27,7 +27,7 @@ Run the ./2PKNN_PYTHON/2PKNN_PYTHON.ipynb for classification.
 * trainAnnotation and testAnnotation: corresponds to the matrices resulted from step 1.
 * k: number of neighbors to consider
 
-In the end of function twopassknn2, some score will be saved that can be useful in inference step.
+In the end of twopassknn2 function, some score will be saved which can be used in inference step.
 
 #### 4. Inference
 
